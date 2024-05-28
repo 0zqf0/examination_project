@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>history help</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <header>
+      <div class="wrap">
+        <div class="header">
+          <div class="logo">
+            <a href="#"><img src="img\logo1.png" alt="logo1.png" /></a>
+          </div>
+          <div class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="face.html">Личности</a></li>
+              <li><a href="date.html" class="active">Даты</a></li>
+              <li><a href="events.html">События</a></li>
+              <li><a href="memes.html">история в мемах</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+<h2 id="about" class="headers">Рассказываем о нас</h2>
+<p class="paragraphs">
+  В разделе "О нас" мы представимся и расскажем о наших целях. Узнайте, как мы стремимся сделать изучение истории увлекательным и понятным для школьников. Здесь мы делимся своим вдохновением, вы найдете информацию о нашей команде, наших целях в области образования, как мы можем помочь вам в погружении в мир истории. 
+</p>
+<div class="container">
+  <div class="main-content">
+  <h2 id="about" class="headers">Цели проекта</h2>
+      <ul class="goals-list">
+          <li><strong>Повышение интереса к истории:</strong> Мы стремимся пробудить интерес к истории России у школьников, делая процесс обучения увлекательным и интерактивным.</li>
+          <li><strong>Обеспечение доступности знаний:</strong> Наша цель – сделать исторические знания доступными для всех. Мы создаем ресурсы, которые можно использовать в любое время и в любом месте.</li>
+          <li><strong>Поддержка образовательных стандартов:</strong> Мы работаем в соответствии с образовательными стандартами, чтобы помочь школьникам и учителям достигать высоких результатов в изучении истории.</li>
+          <li><strong>Развитие критического мышления:</strong> Мы стремимся развивать у школьников навыки критического мышления и анализа. История не только о событиях прошлого, но и о понимании их причин и последствий.</li>
+          <li><strong>Использование современных технологий:</strong> Наша цель – интегрировать современные технологии в процесс обучения, используя интерактивные карты, визуализации и другие мультимедийные ресурсы.</li>
+          <li><strong>Поддержка учителей и родителей:</strong> Мы стремимся предоставить учителям и родителям инструменты и ресурсы, которые помогут им эффективно поддерживать и направлять своих учеников и детей в процессе изучения истории.</li>
+          <li><strong>Формирование сообщества:</strong> Мы создаем платформу для обмена знаниями и идеями, где школьники, учителя и родители могут взаимодействовать, делиться опытом и вдохновением.</li>
+          <li><strong>Популяризация исторического наследия:</strong> Мы стремимся популяризировать богатое историческое наследие России, показывая его значимость и влияние на современный мир.</li>
+          <li><strong>Инклюзивность и доступность:</strong> Мы работаем над тем, чтобы наш сайт был доступен для всех, независимо от возможностей и ограничений пользователей.</li>
+      </ul>
+  </div>
+</div>
+<script>
+  function scrollToTop() {
+      
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          
+          document.querySelector('.scroll-to-top').style.display = 'block';
+      } else {
+
+          document.querySelector('.scroll-to-top').style.display = 'none';
+      }
+  }
+</script>
+</body>
+<footer>
+  <p>&copy; 2023 History</p>
+</footer>
+</html>
+

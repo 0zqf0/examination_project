@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>history help</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <header>
+      <div class="wrap">
+        <div class="header">
+          <div class="logo">
+            <a href="#"><img src="img\logo1.png" alt="logo1.png" /></a>
+          </div>
+          <div class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="face.html">Личности</a></li>
+              <li><a href="date.html" class="active">Даты</a></li>
+              <li><a href="events.html">События</a></li>
+              <li><a href="memes.html">история в мемах</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h2 id="memes" class="headers">Здесь будет информация о истории в мемах</h2>
+    <p class="paragraphs">
+      Ну наконец-то! Намного интереснее изучать историю по мемам. Вам так не
+      кажется? 
+      Раздел "Исторические мемы" призван сделать изучение истории более забавным и запоминающимся. Здесь вы найдете остроумные и интересные мемы, связанные с историческими событиями и личностями. Используйте юмор для запоминания фактов и событий истории.
+    </p>
+    <script>
+      function scrollToTop() {
+          
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+      window.onscroll = function() {
+          scrollFunction();
+      };
+    
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              
+              document.querySelector('.scroll-to-top').style.display = 'block';
+          } else {
+    
+              document.querySelector('.scroll-to-top').style.display = 'none';
+          }
+      }
+    </script>
+</body>
+<footer>
+  <p>&copy; 2023 History</p>
+</footer>
+</html>

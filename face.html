@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>history help</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <header>
+      <div class="wrap">
+        <div class="header">
+          <div class="logo">
+            <a href="#"><img src="img\logo1.png" alt="logo1.png" /></a>
+          </div>
+          <div class="nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="face.html">Личности</a></li>
+              <li><a href="date.html" class="active">Даты</a></li>
+              <li><a href="events.html">События</a></li>
+              <li><a href="memes.html">история в мемах</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h2 id="face" class="headers">Здесь будет информация о личностях</h2>
+    <p class="paragraphs">
+      Личностей много, но вы не одни. Мы постараемся помочь вам познакомиться с
+      "важными историческими шишками".
+      Раздел "Личности" посвящен знаковым историческим личностям. Изучайте жизненные пути и достижения выдающихся личностей, которые оставили свой след в истории человечества. Погружайтесь в исторические биографии и узнавайте, как эти люди формировали ход событий своего времени и какой вклад в истории они оставили.
+    </p>
+
+    <div class="nav-sections">
+      <ul>
+          <li><a href="#rulers-rus">Правители Руси</a></li>
+          <li><a href="#rulers-ussr">Правители СССР</a></li>
+          <li><a href="#rulers-rf">Правители РФ</a></li>
+      </ul>
+  </div>
+<div>
+  <h2 id="rulers-rus" class="headers">Правители Руси</h2>
+  <div class="centered-image">
+      <img src="img/zar/ryrik.png" alt="Правители Руси" />
+      <p class="image-caption">Описание фотографии: Правители Руси</p>
+  </div>
+
+  <h2 id="rulers-ussr" class="headers">Правители СССР</h2>
+  <div class="centered-image">
+      <img src="img/zar/ryrik.png" alt="Правители СССР" />
+      <p class="image-caption">Описание фотографии: Правители СССР</p>
+  </div>
+
+  <h2 id="rulers-rf" class="headers">Правители РФ</h2>
+  <div class="centered-image">
+      <img src="img/zar/ryrik.png" alt="Правители РФ" />
+      <p class="image-caption">Описание фотографии: Правители РФ</p>
+  </div>
+</div>
+<script>
+  function scrollToTop() {
+      
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+  }
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          
+          document.querySelector('.scroll-to-top').style.display = 'block';
+      } else {
+
+          document.querySelector('.scroll-to-top').style.display = 'none';
+      }
+  }
+</script>
+</body>
+<footer>
+  <p>&copy; 2023 History</p>
+</footer>
+</html>

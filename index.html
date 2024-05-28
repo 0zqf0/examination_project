@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карты, даты, три Петра</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <header>
+        <div class="mainheader"><b>Карты, даты, три Петра</b></div>
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="#"><img src="img/logo1.png" alt="Logo"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="face.html">Личности</a></li>
+                        <li><a href="date.html" class="active">Даты</a></li>
+                        <li><a href="events.html">События</a></li>
+                        <li><a href="memes.html">История в мемах</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card-carousel">
+            <div class="card" id="1">
+                <div class="image-container"></div>
+                <p>Докажем, что история это интересно</p>
+            </div>
+            <div class="card" id="2">
+                <div class="image-container"></div>
+                <p>Удобный интерфейс</p>
+            </div>
+            <div class="card" id="3">
+                <div class="image-container"></div>
+                <p>Расскажем, какие исторические пейринги можно считать каноном</p>
+            </div>  
+            <div class="card" id="4">
+                <div class="image-container"></div>
+                <p>Доступ к эксклюзивным материалам</p>
+            </div>
+            <div class="card" id="5">
+                <div class="image-container"></div>
+                <p>Глубокий анализ исторических событий</p>
+            </div>
+        </div>
+        <a href="#" class="visuallyhidden card-controller" aria-hidden="true">Carousel controller</a>
+    </div>
+    <script src="script/script.js"></script>
+    <div class="container">
+        <div class="main-content">
+            <h2>Наши преимущества</h2>
+            <ul class="benefits-list">
+                <li><strong>Комплексное изучение истории России:</strong> На сайте представлены ключевые исторические личности, важные даты и значимые события, что позволяет получить полное представление о богатой истории России.</li>
+                <li><strong>Интерактивное обучение:</strong> Интерактивные карты и визуальные материалы делают процесс изучения истории более увлекательным и запоминающимся. Вы сможете легко сопоставить исторические события с их географическим положением.</li>
+                <li><strong>Доступность информации:</strong> Удобная навигация по сайту позволяет быстро находить нужную информацию. Разделы сайта структурированы таким образом, чтобы вы могли легко переходить от одного аспекта истории к другому.</li>
+                <li><strong>Уникальные разделы:</strong> Раздел "История в мемах" предлагает новый подход к изучению истории, используя современные и популярные мемы для объяснения сложных исторических событий и явлений. Это делает обучение веселым и интересным.</li>
+                <li><strong>Погружение в эпоху:</strong> Подробные биографии и описания исторических личностей помогают глубже понять их роль и влияние на события, происходившие в разные эпохи российской истории.</li>
+                <li><strong>Обновляемый контент:</strong> Сайт регулярно обновляется новыми статьями, материалами и визуальными элементами, что позволяет всегда быть в курсе последних научных исследований и находок в области истории России.</li>
+                <li><strong>Доступ к источникам:</strong> В разделе "О нас" вы найдете информацию о команде, которая работает над сайтом, а также ссылки на использованные источники и литературу, что позволит вам глубже изучить интересующие вас темы.</li>
+                <li><strong>Мобильная версия:</strong> Сайт адаптирован для просмотра на различных устройствах, что позволяет изучать историю в удобное для вас время и в любом месте.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 History</p>
+    </footer>
+    <script>
+        function scrollToTop() {
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.onscroll = function() {
+            scrollFunction();
+        };
+      
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                
+                document.querySelector('.scroll-to-top').style.display = 'block';
+            } else {
+      
+                document.querySelector('.scroll-to-top').style.display = 'none';
+            }
+        }
+      </script>
+</body>
+</html>
