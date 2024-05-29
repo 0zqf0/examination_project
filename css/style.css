@@ -166,7 +166,7 @@ scroll-snap-align: start;
   }
   
   .card-carousel .card {
-    background: rgb(249, 209, 169);
+    background: #f9c55d;
     width: var(--card-width);
     max-width: var(--card-max-width);
     text-align: center;
@@ -202,7 +202,7 @@ scroll-snap-align: start;
   }
   
   .card:nth-of-type(3) .image-container {
-    background-image: url("../img/smartphone.png")
+    background-image: url("../img/hobby.png")
   }
   .card:nth-of-type(4) .image-container {
     background-image: url("../img/new.png")
@@ -410,6 +410,45 @@ a{
   display: block; 
   margin: 0 auto; 
 }
+
+.image-caption {
+  font-size: 24px; 
+  margin-left: 20px;
+  text-indent: 35px;
+  font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+  color:rgb(2, 2, 2);
+}
+
+.paragraphs ul {
+  font-family:Palatino Linotype, Book Antiqua, Palatino, serif;
+  list-style-position: inside; 
+  padding-left: 0; 
+  text-align: left; 
+}
+
+.paragraphs ul li {
+  text-align: left; 
+}
+
+div.preamble {
+  margin: 20px;
+  padding: 20px;
+  border-left: 4px solid #000000;
+  background-color: #ffffff;
+}
+
+.preamble blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+.preamble footer {
+  text-align: right;
+  font-weight: bold;
+  color: black; 
+  background-color: #cecdcc;}
+
 
 footer {
   background-color:#efb033;
